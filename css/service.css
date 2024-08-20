@@ -1,0 +1,79 @@
+img.flaticon-car-detailing::before {
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+    background-image: linear-gradient(#E81C2E, #202C45) !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s;
+}
+
+img.flaticon-car-detailing {
+    color: #202C45;
+    /* font-size: 75px; */
+    /* line-height: 75px;
+    margin-bottom: 20px;
+    height: 60px;
+    width: 58px; */
+
+}
+
+/* Container for the service item */
+.service-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Icon wrapper */
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+/* Gradient overlay for the icon */
+.icon-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff0000 0%, #ff6600 50%, #990000 100%);
+    -webkit-mask-image: url('path/to/your/detailing-icon.png');
+    /* PNG icon path */
+    mask-image: url('path/to/your/detailing-icon.png');
+    /* PNG icon path */
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    z-index: 1;
+}
+
+/* Styling for the icon itself */
+.flaticon-full-service {
+    font-size: 50px;
+    color: transparent;
+    /* Make the original icon color transparent */
+}
+
+/* Styling for the service item text */
+.service-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #666;
+}

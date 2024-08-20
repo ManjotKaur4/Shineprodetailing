@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AutoWash - Car Wash Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/LOGO/95-65-favicon.png" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    .service-section {
+        padding: 60px 0;
+    }
+
+    .service-item {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .service-item .text-content,
+    .service-item .image-content {
+        flex: 1;
+    }
+
+    .service-item .image-content img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .service-item .text-content {
+        padding: 20px;
+    }
+
+    .service-number {
+        font-size: 5rem;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .btn-view {
+        background: #e81c2e;
+        color: #fff;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        border-radius: 0;
+        border: none;
+    }
+
+    @media (max-width: 768px) {
+        .category-box__img-wrapper video {
+            width: 100%;
+            height: auto;
+        }
+
+        .category-box__inner {
+            padding: 24px 0 0 0;
+            margin: 0 -20px;
+            padding: 0px 34px 0px 34px;
+        }
+
+        .category-box__img-corner {
+            width: 133px;
+            height: 132px;
+            clip-path: polygon(100% 0, 0% 0%, 0% 100%);
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            background-color: #ffffff;
+            overflow: hidden;
+            z-index: 9;
+        }
+
+        span.category-box__num {
+            font-size: 92px;
+            letter-spacing: -3.5px;
+            font-weight: bold;
+            line-height: 0.75;
+            text-align: center;
+            color: #000000;
+            margin-top: 1px;
+        }
+
+        .category-box__img-wrapper {
+            padding: 0 15px;
+        }
+
+        .category-box__name {
+            font-size: 1.5rem;
+        }
+
+        .category-box__desc,
+        .category-box__btn {
+            font-size: 1rem;
+        }
+    }
+
+    .btn-view:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    .whats-btn {
+        position: fixed;
+        right: 96px;
+        bottom: 28px;
+        z-index: 10000;
+    }
+</style>
+
+<body>
+
+
+    <!-- Top Bar Start -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-12">
+                    <div class="logo">
+                        <a href="index.html">
+                            <!-- <h1>Auto<span>Wash</span></h1> -->
+                            <img src="./img/LOGO/185-70.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="top-bar-item">
+                                <div class="top-bar-icon">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="top-bar-text">
+                                    <h3>Opening Hour</h3>
+                                    <p>Mon - Sun, 9:00 - 9:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="top-bar-item">
+                                <div class="top-bar-icon">
+                                    <i class="fa fa-phone-alt"></i>
+                                </div>
+                                <div class="top-bar-text">
+                                    <h3>Call Us</h3>
+                                    <p>437-599-4749</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="top-bar-item">
+                                <div class="top-bar-icon">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                                <div class="top-bar-text">
+                                    <h3>Email Us</h3>
+                                    <p>Shineprodetailing148@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+
+
+    <!-- Nav Bar Start -->
+    <div class="nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link active">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="team.html" class="nav-item nav-link">Our Team</a>
+                        <!-- <a href="location.html" class="nav-item nav-link">Washing Points</a> -->
+                        <!-- <div class="nav-item dropdown"> -->
+                        <!-- <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a> -->
+                        <!-- <div class="dropdown-menu"> -->
+                        <!-- <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                                    <a href="single.html" class="dropdown-item">Detail Page</a> -->
+                        <!-- <a href="team.html" class="dropdown-item">Team Member</a> -->
+                        <!-- <a href="booking.html" class="dropdown-item">Schedule Booking</a> -->
+                        <!-- </div> -->
+                        <!-- </div> -->
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="ml-auto">
+                        <a class="btn btn-custom" href="./contact.html">Get Appointment</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+    <!-- Carousel Start -->
+    <!-- Carousel Start -->
+    <div class="carousel">
+        <div class="owl-carousel">
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="img/carousel-1.jpg" alt="Image">
+                </div>
+                <div class="carousel-text">
+                    <h3>Washing & Detailing</h3>
+                    <h1>Keep your Car Newer</h1>
+                    <a class="btn btn-custom" href="./service.html">Explore More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="img/carousel-2.jpg" alt="Image">
+                </div>
+                <div class="carousel-text">
+                    <h3>Washing & Detailing</h3>
+                    <h1>Quality service for you</h1>
+                    <a class="btn btn-custom" href="./service.html">Explore More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="img/carousel-3.jpg" alt="Image">
+                </div>
+                <div class="carousel-text">
+                    <h3>Washing & Detailing</h3>
+                    <h1>Exterior & Interior Washing</h1>
+                    <a class="btn btn-custom" href="./service.html">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="img/about us img.png" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-header text-left">
+                        <p>About Us</p>
+                        <h2>car washing and detailing</h2>
+                    </div>
+                    <div class="about-content">
+                        <p>
+                            At Shine Pro Detailing, we pride ourselves on meticulous attention to every vehicle,
+                            regardless of its make, model, or condition. Our comprehensive detailing services include
+                            cleaning, polishing, protective coatings, and more, ensuring your car shines like new. We
+                            exclusively use top-tier tools and equipment to achieve superior results. Our mission is not
+                            just to eliminate contaminants but also to restore and highlight your car's natural beauty.
+                            We understand each car's unique characteristics and tailor our services to meet your
+                            specific needs and budget. With a commitment to personalized care, we strive to make your
+                            vehicle a source of admiration and envy. Trust Shine Pro Detailing for unparalleled
+                            expertise in every aspect of car detailing.
+                        </p>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i>Seats washing</li>
+                            <li><i class="far fa-check-circle"></i>Vacuum cleaning</li>
+                            <li><i class="far fa-check-circle"></i>Interior wet cleaning</li>
+                            <li><i class="far fa-check-circle"></i>Window wiping</li>
+                        </ul>
+                        <a class="btn btn-custom" href="./service.html">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    <div class="service">
+        <div class="container service-section">
+            <h2 class="category-box__name text-center wwd-h2">What We Do</h2>
+            <div class="container category-box__container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 category-box__content">
+                        <div class="category-box__inner">
+                            <div class="row">
+                                <div class="flex-row">
+                                    <div class="col-xs-12">
+                                        <h2 class="category-box__name">Detailing</h2>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="category-box__content">
+                                            <p class="category-box__desc">In Skin Restoration Service, the surface of
+                                                the vehicle is buffed to get rid of the old and dull layer of the paint
+                                                to reveal a brand new and shiny layer:</p>
+                                            <ul>
+                                                <li><a href="#">Skin Restoration</a></li>
+                                                <li><a href="#">Headlight Restoration</a></li>
+                                                <li><a href="#">Chrome Restoration</a></li>
+                                                <li><a href="#">Wheel Restoration</a></li>
+                                                <li><a href="#">Trim Restoration</a></li>
+                                                <li><a href="#">Fabric Restoration</a></li>
+                                                <li><a href="#">Leather Restoration</a></li>
+                                            </ul>
+                                            <a href="./detailing-services.html" class="category-box__btn">
+                                                <span>View</span>
+                                                <svg x="0px" y="0px" viewBox="0 0 207.9 23.4"
+                                                    style="enable-background: new 0 0 207.9 23.4;" xml:space="preserve">
+                                                    <polygon
+                                                        points="207.9,11.6 196.4,0 194.6,1.8 203.8,10.6 203.8,10.6 0,10.6 0,12.6 203.8,12.6 203.8,12.6 194.6,21.5 196.4,23.3 207.9,11.6 " />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-xs-12 category-box__assets">
+                        <div class="category-box__img-wrapper">
+                            <div class="category-box__img" data-aos="fade-left">
+                                <div class="category-box__img-corner">
+                                    <span class="category-box__num">01</span>
+                                </div>
+                                <video class="lazy"
+                                    style="width: 100%; filter: grayscale(1); -webkit-filter: grayscale(1);"
+                                    id="video-elem" preload="none" autoplay loop muted>
+                                    <source src="./img/slider2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 category-box__content">
+                        <div class="category-box__inner">
+                            <div class="row">
+                                <div class="flex-row">
+                                    <div class="col-xs-12">
+                                        <h2 class="category-box__name">Washing</h2>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="category-box__content">
+                                            <ul>
+                                                <li><a href="#">Exterior Washing</a></li>
+                                                <li><a href="#">Interior Washing</a></li>
+                                                <li><a href="#">Vacuum Cleaning</a></li>
+                                                <li><a href="#">Seats Washing</a></li>
+                                                <li><a href="#">Window Wiping</a></li>
+                                                <li><a href="#">Wet Cleaning</a></li>
+                                                <!-- <li><a href="#">Top Car Detailing Services</a></li> -->
+                                                <!-- <li><a href="#">Affordable Car Detailing Near You</a></li> -->
+                                                <!-- <li><a href="#">Professional Auto Detailing</a></li> -->
+                                                <!-- <li><a href="#">Get Your Car Detailed Today</a></li> -->
+                                                <!-- <li><a href="#">Expert Car Cleaning Services</a></li> -->
+                                                <li><a href="#">Mobile Car Detailing Available</a></li>
+                                                <!-- <li><a href="#">Interior & Exterior Detailing</a></li> -->
+                                                <li><a href="#">Satisfaction Guaranteed</a></li>
+                                                <li><a href="#">Make Your Car Look New Again</a></li>
+                                                <li><a href="#">Trusted Car Detailing Experts</a></li>
+                                            </ul>
+                                            <a href="./washing-service.html" class="category-box__btn">
+                                                <span>View</span>
+                                                <svg x="0px" y="0px" viewBox="0 0 207.9 23.4"
+                                                    style="enable-background: new 0 0 207.9 23.4;" xml:space="preserve">
+                                                    <polygon
+                                                        points="207.9,11.6 196.4,0 194.6,1.8 203.8,10.6 203.8,10.6 0,10.6 0,12.6 203.8,12.6 203.8,12.6 194.6,21.5 196.4,23.3 207.9,11.6 " />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-xs-12 category-box__assets">
+                        <div class="category-box__img-wrapper">
+                            <div class="category-box__img" data-aos="fade-left">
+                                <div class="category-box__img-corner">
+                                    <span class="category-box__num">02</span>
+                                </div>
+                                <video class="lazy"
+                                    style="width: 100%; filter: grayscale(1); -webkit-filter: grayscale(1);"
+                                    id="video-elem" preload="none" autoplay loop muted>
+                                    <source src="./img/washing video service.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 category-box__content">
+                        <div class="category-box__inner">
+                            <div class="row">
+                                <div class="flex-row">
+                                    <div class="col-xs-12">
+                                        <h2 class="category-box__name">Coating</h2>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="category-box__content">
+                                            <p class="category-box__desc">In Skin Restoration Service, the surface of
+                                                the vehicle is buffed to get rid of the old and dull layer of the paint
+                                                to reveal a brand new and shiny layer:</p>
+                                            <ul>
+                                                <li><a href="#">Skin Restoration</a></li>
+                                                <li><a href="#">Headlight Restoration</a></li>
+                                                <li><a href="#">Chrome Restoration</a></li>
+                                                <li><a href="#">Wheel Restoration</a></li>
+                                                <li><a href="#">Trim Restoration</a></li>
+                                                <li><a href="#">Fabric Restoration</a></li>
+                                                <li><a href="#">Leather Restoration</a></li>
+                                            </ul>
+                                            <a href="./coating-services.html" class="category-box__btn">
+                                                <span>View</span>
+                                                <svg x="0px" y="0px" viewBox="0 0 207.9 23.4"
+                                                    style="enable-background: new 0 0 207.9 23.4;" xml:space="preserve">
+                                                    <polygon
+                                                        points="207.9,11.6 196.4,0 194.6,1.8 203.8,10.6 203.8,10.6 0,10.6 0,12.6 203.8,12.6 203.8,12.6 194.6,21.5 196.4,23.3 207.9,11.6 " />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-xs-12 category-box__assets">
+                        <div class="category-box__img-wrapper">
+                            <div class="category-box__img" data-aos="fade-left">
+                                <div class="category-box__img-corner">
+                                    <span class="category-box__num">03</span>
+                                </div>
+                                <video class="lazy"
+                                    style="width: 100%; filter: grayscale(1); -webkit-filter: grayscale(1);"
+                                    id="video-elem" preload="none" autoplay loop muted>
+                                    <source src="./img/coating.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service Start -->
+    <!-- <div class="service">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>What We Do?</p>
+                <h2>Our Washing Services</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <i class="flaticon-car-wash-1"></i>
+                        <h3>Exterior Washing</h3>
+                        <p>Our professional exterior washing service ensures your car looks brand new, removing dirt,
+                            grime, and road salt to protect your vehicle's paint and finish.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <i class="flaticon-car-wash"></i>
+                        <h3>Interior Washing</h3>
+                        <p>We provide thorough interior washing, cleaning seats, carpets, and dashboards to eliminate
+                            dust, stains, and allergens, ensuring a fresh and comfortable ride.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <i class="flaticon-vacuum-cleaner"></i>
+                        <h3>Vacuum Cleaning</h3>
+                        <p>Our efficient vacuum cleaning service removes dust, debris, and pet hair from every corner of
+                            your vehicle, maintaining a clean and tidy interior.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <i class="flaticon-seat"></i>
+                        <h3>Seats Washing</h3>
+                        <p> Professional seats washing that cleans and sanitizes your car seats, removing stains and
+                            odors, and leaving your seats looking and smelling fresh.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <i class="flaticon-car-service"></i>
+                        <h3>Window Wiping</h3>
+                        <p>Expert window wiping services that ensure your car windows are spotless, streak-free, and
+                            clear, enhancing visibility and overall vehicle appearance.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <i class="flaticon-car-service-2"></i>
+                        <h3>Wet Cleaning</h3>
+                        <p> Detailed wet cleaning service that uses specialized products to clean and protect your
+                            vehicle's surfaces, both inside and out.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+    <!-- Service End -->
+
+
+    <!-- Facts Start -->
+    <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="facts-item">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <div class="facts-text">
+                            <h3 data-toggle="counter-up">4</h3>
+                            <p>Service Points</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="facts-item">
+                        <i class="fa fa-user"></i>
+                        <div class="facts-text">
+                            <h3 data-toggle="counter-up">3</h3>
+                            <p>Team Members</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="facts-item">
+                        <i class="fa fa-users"></i>
+                        <div class="facts-text">
+                            <h3 data-toggle="counter-up">1500</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="facts-item">
+                        <i class="fa fa-check"></i>
+                        <div class="facts-text">
+                            <h3 data-toggle="counter-up">5000</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- Price Start -->
+    <div class="price">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Our Plan</p>
+                <h2>Choose Your Plan</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="price-item featured-item">
+                        <div class="price-header">
+                            <h3>Basic Cleaning</h3>
+                            <h2><span>$</span><strong>100</strong><span>.99</span></h2>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li><i class="far fa-check-circle"></i>Vacuum interior</li>
+                                <li><i class="far fa-check-circle"></i>Interior wipe-down</li>
+                                <li><i class="far fa-check-circle"></i>Streak-free window & glass finish</li>
+                                <li><i class="far fa-check-circle"></i>Steaming dashboard only</li>
+                                <li><i class="far fa-check-circle"></i>Chemicals applied to shine car</li>
+                                <li><i class="far fa-check-circle"></i>Shiners applied to give a new look</li>
+                            </ul>
+                        </div>
+                        <div class="price-footer">
+                            <a class="btn btn-custom" href="./contact.html">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="price-item featured-item">
+                        <div class="price-header">
+                            <h3>Premium Cleaning</h3>
+                            <h2><span>$</span><strong>130</strong><span>.99</span></h2>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li><i class="far fa-check-circle"></i>Full interior steam and shampoo for seats</li>
+                                <li><i class="far fa-check-circle"></i>Shampoo carpets, mats, and floor; floor steam and
+                                    shampoo</li>
+                                <li><i class="far fa-check-circle"></i>Leather treatment and conditioning</li>
+                                <li><i class="far fa-check-circle"></i>Door panels, center console, and interior windows
+                                </li>
+                                <li><i class="far fa-check-circle"></i>Floor mats, air vents, and glove box tidy-up</li>
+                                <li><i class="far fa-check-circle"></i>Trunk vacuum and steering wheel degreased</li>
+                            </ul>
+                        </div>
+                        <div class="price-footer">
+                            <a class="btn btn-custom" href="./contact.html">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="price-item featured-item">
+                        <div class="price-header">
+                            <h3>Truck Washing & Care Points</h3>
+                            <h2><span>$</span><strong>200</strong><span>.99</span></h2>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li><i class="far fa-check-circle"></i>Full interior steam and shampoo for seats</li>
+                                <li><i class="far fa-check-circle"></i>Shampoo carpets, mats, and floor; floor steam and
+                                    shampoo</li>
+                                <li><i class="far fa-check-circle"></i>Leather treatment and conditioning</li>
+                                <li><i class="far fa-check-circle"></i>Door panels, center console, and interior windows
+                                </li>
+                                <li><i class="far fa-check-circle"></i>Floor mats, air vents, and glove box tidy-up</li>
+                                <li><i class="far fa-check-circle"></i>Trunk vacuum and steering wheel degreased</li>
+                            </ul>
+                        </div>
+                        <div class="price-footer">
+                            <a class="btn btn-custom" href="./contact.html">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="price-item featured-item">
+                        <div class="price-header">
+                            <h3>Complex Cleaning</h3>
+                            <h2><span>$</span><strong>160</strong><span>.99</span></h2>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li><i class="far fa-check-circle"></i>Included in Premium</li>
+                                <li><i class="far fa-check-circle"></i>Seats Washing, Seat belts clean</li>
+                                <li><i class="far fa-check-circle"></i>Vacuum Cleaning, Trunk shampoo</li>
+                                <li><i class="far fa-check-circle"></i>Exterior Cleaning</li>
+                                <li><i class="far fa-check-circle"></i>Interior Wet Cleaning</li>
+                                <li><i class="far fa-check-circle"></i>Window Wiping, Roof clean</li>
+                            </ul>
+                        </div>
+                        <div class="price-footer">
+                            <a class="btn btn-custom" href="./contact.html">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Price End -->
+
+
+
+
+    <!-- Location Start -->
+    <div class="location">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="section-header text-left">
+                        <p>Washing Points</p>
+                        <h2>Shine pro car detailing auto care</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="location-item">
+                                <i class="fa fa-map-marker-alt"></i>
+                                <div class="location-text">
+                                    <h3>Car Washing Point</h3>
+                                    <p>Brampton ON</p>
+                                    <p><strong>Call:</strong>437-599-4749</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="location-item">
+                                <i class="fa fa-map-marker-alt"></i>
+                                <div class="location-text">
+                                    <h3>Car Washing Point</h3>
+                                    <p>Mississauga ON</p>
+                                    <p><strong>Call:</strong>437-599-4749</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="location-item">
+                                <i class="fa fa-map-marker-alt"></i>
+                                <div class="location-text">
+                                    <h3>Car Washing Point</h3>
+                                    <p>ETOBICOKE ON</p>
+                                    <p><strong>Call:</strong>437-599-4749</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="location-item">
+                                <i class="fa fa-map-marker-alt"></i>
+                                <div class="location-text">
+                                    <h3>Car Washing Point</h3>
+                                    <p>OAKVILLE ON</p>
+                                    <p><strong>Call:</strong>437-599-4749</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="location-form">
+                        <h3>Request for a car wash</h3>
+                        <form>
+                            <div class="control-group">
+                                <input type="text" class="form-control" placeholder="Name" required="required" />
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control" placeholder="Email" required="required" />
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control" placeholder="Description" required="required"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-custom" type="submit">Send Request</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Location End -->
+
+
+    <!-- Team Start -->
+    <div class="team">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Meet Our Team</p>
+                <!-- <h2>Our Engineers & Workers</h2> -->
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/image-1.png" alt="Team Image">
+                        </div>
+                        <div class="team-text">
+                            <h2>Sukhwinder Singh</h2>
+                            <!-- <p>Engineer</p> -->
+                            <div class="team-social">
+                                <!-- <a href=""><i class="fab fa-twitter"></i></a> -->
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
+                                <a href="https://www.instagram.com/i13sukh/"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/image-2team.png" alt="Team Image">
+                        </div>
+                        <div class="team-text">
+                            <h2>Manjot Singh</h2>
+                            <!-- <p>Engineer</p> -->
+                            <div class="team-social">
+                                <!-- <a href=""><i class="fab fa-twitter"></i></a> -->
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
+                                <a href="https://www.instagram.com/imanjot.07"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/image3-team.png" alt="Team Image">
+                        </div>
+                        <div class="team-text">
+                            <h2>Gurpreet Singh</h2>
+                            <!-- <p>Worker</p> -->
+                            <div class="team-social">
+                                <!-- <a href=""><i class="fab fa-twitter"></i></a> -->
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
+                                <a href="https://www.instagram.com/gurpreetgill05_/"><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+<!-- Testimonial Submission Form Start -->
+<div class="testimonial-submission">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Submit Your Testimonial</p>
+            <h2>We value your feedback</h2>
+        </div>
+        <form id="testimonialForm">
+            <div class="form-group">
+                <input type="text" class="form-control" id="clientName" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="clientReview" rows="4" placeholder="Your Review" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="file" class="form-control" id="clientImage" accept="image/*" required>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-custom">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Testimonial Submission Form End -->
+
+<!-- Testimonial Start -->
+<div class="testimonial">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Testimonial</p>
+            <h2>What our clients say</h2>
+        </div>
+        <div class="owl-carousel testimonials-carousel" id="testimonialsCarousel">
+            <!-- Testimonials will be injected here by JavaScript -->
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+<script>
+    // Initialize testimonials with data from localStorage or default testimonials
+    const defaultTestimonials = [
+        {
+            name: "Tim Mcgowan",
+            review: "Sukhwinder and his team did a great job. Fast, friendly, efficient and my car look like it did when I bought it! What more can I ask . I would recommend them to anyone!",
+            image: "img/testimonial-1.jpg"
+        },
+        {
+            name: "MJ K.",
+            review: "I got a car detailing for my husband for Father's Day and we finally had a chance for Dave to come out yesterday and work on his car. My husband said he did an absolutely fantastic job! 'The best detail I ever had' was part of his quote. This is really high praise coming from a true car guy with high standards.",
+            image: "img/testimonial-2.jpg"
+        },
+        {
+            name: "Brandon M.",
+            review: "They did an amazing job on my car. It looks better than when I first bought the car. The customer service was also amazing. The owner is extremely nice and professional. I can't recommend this enough!!!",
+            image: "img/testimonial-3.jpg"
+        },
+        {
+            name: "Rob M.",
+            review: "Absolutely best detail wash wax service ever!!! Beautiful job!!! When finished they delivered my car right to my front door!!! Highly recommend their service and they were great people to deal with!!!",
+            image: "img/testimonial-4.jpg"
+        }
+    ];
+
+    function getTestimonials() {
+        const savedTestimonials = localStorage.getItem('testimonials');
+        return savedTestimonials ? JSON.parse(savedTestimonials) : defaultTestimonials;
+    }
+
+    function saveTestimonials(testimonials) {
+        localStorage.setItem('testimonials', JSON.stringify(testimonials));
+    }
+
+    function displayTestimonials() {
+        const testimonials = getTestimonials();
+        const testimonialsCarousel = document.getElementById('testimonialsCarousel');
+        testimonialsCarousel.innerHTML = '';
+
+        testimonials.forEach(testimonial => {
+            const testimonialItem = document.createElement('div');
+            testimonialItem.classList.add('testimonial-item');
+
+            testimonialItem.innerHTML = `
+                <img src="${testimonial.image}" alt="Image">
+                <div class="testimonial-text">
+                    <h3>${testimonial.name}</h3>
+                    <p>${testimonial.review}</p>
+                </div>
+            `;
+
+            testimonialsCarousel.appendChild(testimonialItem);
+        });
+
+        // Initialize or refresh the carousel
+        $('.testimonials-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            nav: true,
+            autoplay: true,
+            autoplayHoverPause: true
+        });
+    }
+
+    document.getElementById('testimonialForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const clientName = document.getElementById('clientName').value;
+        const clientReview = document.getElementById('clientReview').value;
+        const clientImage = document.getElementById('clientImage').files[0];
+
+        if (clientImage) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const testimonials = getTestimonials();
+                testimonials.push({
+                    name: clientName,
+                    review: clientReview,
+                    image: e.target.result // Base64 image string
+                });
+
+                saveTestimonials(testimonials);
+                displayTestimonials();
+            };
+            reader.readAsDataURL(clientImage);
+        } else {
+            // Handle case where no image is uploaded
+            const testimonials = getTestimonials();
+            testimonials.push({
+                name: clientName,
+                review: clientReview,
+                image: 'img/testimonial-placeholder.jpg' // Placeholder image for new testimonials
+            });
+
+            saveTestimonials(testimonials);
+            displayTestimonials();
+        }
+
+        // Clear the form
+        document.getElementById('testimonialForm').reset();
+    });
+
+    // Initial display of testimonials
+    displayTestimonials();
+</script>
+
+
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h2>Get In Touch</h2>
+                        <p><i class="fa fa-map-marker-alt"></i>11 Marbleseed Crescent, Brampton, ON L6R 2J8, Canada
+                        </p>
+                        <p><i class="fa fa-phone-alt"></i> 437-599-4749</p>
+                        <p><i class="fa fa-envelope"></i>Shineprodetailing148@gmail.com</p>
+                        <div class="footer-social">
+                            <!-- <a class="btn" href=""><i class="fab fa-twitter"></i></a> -->
+                            <a class="btn"
+                                href="https://www.facebook.com/profile.php?id=100088639584866&mibextid=LQQJ4d"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <!-- <a class="btn" href=""><i class="fab fa-youtube"></i></a> -->
+                            <a class="btn"
+                                href="https://www.instagram.com/highend__wash/?igsh=aXBlanQwd2lqbjBz&utm_source=qr"><i
+                                    class="fab fa-instagram"></i></a>
+                            <!-- <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-link">
+                        <h2>Popular Links</h2>
+                        <a href="./about.html">About Us</a>
+                        <a href="./contact.html">Contact Us</a>
+                        <a href="./service.html">Our Service</a>
+                        <!-- <a href="./location.html">Service Points</a> -->
+                        <a href="./index.html">Pricing Plan</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-link">
+                        <h2>Useful Links</h2>
+                        <!-- <a href="">Terms of use</a> -->
+                        <!-- <a href="">Privacy policy</a> -->
+                        <!-- <a href="">Cookies</a> -->
+                        <a href="./contact.html">Help</a>
+                        <a href="./contact.html">FQAs</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-newsletter">
+                        <!-- <h2>Newsletter</h2>
+                        <form>
+                            <input class="form-control" placeholder="Full Name">
+                            <input class="form-control" placeholder="Email">
+                            <button class="btn btn-custom">Submit</button>
+                        </form> -->
+
+                        <div class="footer-logo">
+                            <img class="footer-img-logo" src="./img/footer-logo.png"
+                                style="height: 241px;width: 264px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; <a href="#">Shine Pro Detailing</a>, All Right Reserved. Designed By <a href="#">AITECHNOMIND</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <div class="whats-btn">
+        <a class="whatsapp-share" target="_blank" href="https://api.whatsapp.com/send?phone=14375994749"
+            data-action="share/whatsapp/share">
+            <img src="./img/whatsapp-icon/WhatsApp_icon.png.webp" width="50" alt="WhatsApp Icon for Canada">
+        </a>
+    </div>
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+        <div class="loader"></div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
